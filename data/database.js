@@ -1,4 +1,6 @@
 import { MongoClient } from 'mongodb';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const connectionProtocol = process.env.MONGODB_CONNECTION_PROTOCOL;
 const clusterAddress = process.env.MONGODB_CLUSTER_ADDRESS;
